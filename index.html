@@ -12,77 +12,124 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="glow glow-one"></div><div class="glow glow-two"></div>
+  <div class="glow glow-one" aria-hidden="true"></div>
+  <div class="glow glow-two" aria-hidden="true"></div>
+
   <header class="topbar">
-    <a class="brand" href="#"><span class="brand-mark">✦</span> ПМ<span class="brand-dot">.</span></a>
-    <nav><a href="#members">Участники</a><a href="#about">О сервере</a></nav>
+    <a class="brand" href="#top" aria-label="На главную"><span class="brand-mark">✦</span> ПМ<span class="brand-dot">.</span></a>
+    <nav aria-label="Главная навигация">
+      <a href="#members">Участники</a>
+      <a href="#music">Музыка</a>
+      <a href="#about">О сервере</a>
+    </nav>
     <a class="top-join" href="https://discord.gg/sW3k2eWvD" target="_blank" rel="noopener">Войти в Discord ↗</a>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
       <div class="hero-copy">
         <div class="eyebrow"><span class="pulse"></span> DISCORD COMMUNITY</div>
         <h1>ПОЛОВЫЕ<br><span>МОНСТРЫ</span></h1>
-        <p class="hero-text">Сборище легенд, мемов и людей, которым явно стоило лечь спать пораньше.</p>
+        <p class="hero-text">Сборище отбросов общество,и людей,которым явно стоило лечь спать пораньше.</p>
         <div class="hero-actions">
-          <a class="button primary" href="https://discord.gg/sW3k2eWvD" target="_blank" rel="noopener">Присоединиться <span>↗</span></a>
+          <a class="button primary" href="https://discord.gg/sW3k2eWvD" target="_blank" rel="noopener">Пожертвоваться <span>↗</span></a>
           <a class="button secondary" href="#members">Посмотреть состав</a>
         </div>
-        <div class="hero-note">⚠️ Вход на свой страх и анус</div>
+        <div class="hero-note">⚠️ Вход на свой страх и анал</div>
       </div>
       <div class="hero-art" aria-label="Декоративная иллюстрация">
         <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-        <div class="mascot">💩</div>
-        <div class="sticker sticker-top">НЕ НОРМАЛЬНЫЕ<br>НО СВОИ</div>
-        <div class="sticker sticker-bottom">EST. 2020</div>
+        <button class="mascot" id="mascot" type="button" aria-label="Секретная кнопка">👾</button>
+        <div class="sticker sticker-top">НЕ НОРМАЛЬНЫЕ<br>АУТИСТЫ</div>
+        <div class="sticker sticker-bottom">DOTA 2 коучи</div>
         <span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span>
       </div>
     </section>
 
     <section class="section" id="members">
       <div class="section-heading">
-        <div><div class="eyebrow">НАШ ЛЕГЕНДАРНЫЙ СОСТАВ</div><h2>Активные участники<span>.</span></h2></div>
-        <div class="count">05 <small>В КАТАЛОГЕ</small></div>
+        <div><div class="eyebrow">Гении девственники</div><h2>Активные участники<span>.</span></h2></div>
+        <div class="count"><span id="member-count">05</span> <small>В КАТАЛОГЕ</small></div>
       </div>
-      <div class="member-grid">
-        <article class="member-card featured">
-          <div class="card-top top-orange"><span class="rank">01 / ОСНОВА</span><span class="emoji">🌸</span></div>
-          <img class="avatar" src="assets/member-1.jpg" alt="Аватар Максима Борща">
-          <div class="member-info"><div class="member-name">Максим Борщ</div><div class="member-handle">борщ</div><p>Гений танков и беспилотной хуйни</p><div class="tags"><span>🥟 Борщ</span><span>🎮 Игры</span></div></div>
-        </article>
-        <article class="member-card admin">
-          <div class="card-top top-violet"><span class="rank">02 / АДМИНИСТРАЦИЯ</span><span class="emoji">👑</span></div>
-          <img class="avatar" src="assets/member-2.jpg" alt="Аватар Mr.Tea">
-          <div class="member-info"><div class="member-name">Mr.Tea</div><div class="member-handle">mr.tea9053</div><div class="role">👑 БОГ ОЧКОВ · ГЛАВНЫЙ АДМИН</div><p>Главный по очкам. Остальные вопросы — после копро принятия</p><div class="tags"><span>🫖 Чай</span><span>⚡ Власть</span></div></div>
-        </article>
-        <article class="member-card">
-          <div class="card-top top-black"><span class="rank">03 / УЧАСТНИК</span><span class="emoji">🐶</span></div>
-          <img class="avatar" src="assets/member-3.jpg" alt="Аватар Kvasman">
-          <div class="member-info"><div class="member-name">Kvasman</div><div class="member-handle">kv4sm3n0461</div><p>Орёт везде и всегда.</p><div class="tags"><span>🎮 Гейминг</span><span>🖤 Хаос</span></div></div>
-        </article>
-        <article class="member-card">
-          <div class="card-top top-sand"><span class="rank">04 / УЧАСТНИК</span><span class="emoji">✨</span></div>
-          <img class="avatar" src="assets/member-4.jpg" alt="Аватар Timatsser">
-          <div class="member-info"><div class="member-name">Timatsser</div><div class="member-handle">timatsser</div><p>ДР БЛИЗКО! (30 октября) — событие ноября.</p><div class="tags"><span>🎂 Именинник</span><span>🎮 Игры</span></div></div>
-        </article>
-        <article class="member-card">
-          <div class="card-top top-glitch"><span class="rank">05 / УЧАСТНИК</span><span class="emoji">🌀</span></div>
-          <img class="avatar" src="assets/member-5.jpg" alt="Аватар Shame">
-          <div class="member-info"><div class="member-name">Shame</div><div class="member-handle">the_shame!</div><p>Далбаёб,та я ебу блять,надо у тимура спрашивать.</p><div class="tags"><span>🌀 Глитч</span><span>💬 Мемы</span></div></div>
-        </article>
+      <div class="member-toolbar">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="member-search" type="search" placeholder="Найти участника..." autocomplete="off" aria-label="Поиск участника">
+        </label>
+        <span class="toolbar-hint">Пять чмошников.</span>
       </div>
-      <p class="fineprint">Карточки участников оформлены по присланным скриншотам. Описания — шуточные.</p>
+      <div class="member-grid" id="member-grid">
+        <article class="member-card featured" data-search="максим борщ борщ игры основа">
+          <div class="card-top top-orange"><span class="rank">01 / Надзиратель</span><span class="emoji">🌸</span></div>
+          <img class="avatar" src="assets/member-1.jpg" alt="Аватар Максима Борща" loading="lazy">
+          <div class="member-info"><div class="member-name">Максим Борщ</div><div class="member-handle">борщ</div><p>Мастурбатор на копытоподобных девочек,и болшие дула танков</p><div class="tags"><span>Инженер</span><span>🎮 Игры</span></div></div>
+        </article>
+        <article class="member-card admin" data-search="mr tea mr.tea9053 администрация админ чай">
+          <div class="card-top top-violet"><span class="rank">02 / Гамно</span><span class="emoji">👑</span></div>
+          <img class="avatar" src="assets/member-2.jpg" alt="Аватар Mr.Tea" loading="lazy">
+          <div class="member-info"><div class="member-name">Mr.Tea</div><div class="member-handle">mr.tea9053</div><div class="role">👑 БОГ ОЧКОВ · ГЛАВНЫЙ АДМИН</div><p>Главный по очкам. Остальные вопросы — после чаепития.</p><div class="tags"><span>мистер чмо</span><span> Правление</span></div></div>
+        </article>
+        <article class="member-card" data-search="kvasman kv4sm3n0461 гейминг хаос">
+          <div class="card-top top-black"><span class="rank">03 / Надзиратель</span><span class="emoji">🐈</span></div>
+          <img class="avatar" src="assets/member-3.jpg" alt="Аватар Kvasman" loading="lazy">
+          <div class="member-info"><div class="member-name">Kvasman</div><div class="member-handle">kv4sm3n0461</div><p>Гений майнкрафта,бог арк вардена 2/15/0.</p><div class="tags"><span>🎮 Гейминг</span><span>ирод</span></div></div>
+        </article>
+        <article class="member-card" data-search="timatsser именинник игры">
+          <div class="card-top top-sand"><span class="rank">04 / Певец</span><span class="emoji">✨</span></div>
+          <img class="avatar" src="assets/member-4.jpg" alt="Аватар Timatsser" loading="lazy">
+          <div class="member-info"><div class="member-name">Timatsser</div><div class="member-handle">timatsser</div><p>ДР БЛИЗКО! (30 октября) — событие года.</p><div class="tags"><span> Именинник</span><span>🎮 Игры</span></div></div>
+        </article>
+        <article class="member-card" data-search="shame the_shame мемы глитч">
+          <div class="card-top top-glitch"><span class="rank">05 / Певец/Дизайнер</span><span class="emoji">🌀</span></div>
+          <img class="avatar" src="assets/member-5.jpg" alt="Аватар Shame" loading="lazy">
+          <div class="member-info"><div class="member-name">Shame</div><div class="member-handle">the_shame!</div><p>Он,оно.Привет как аа.Hi,its me,uts VERITY!</p><div class="tags"><span>Сися</span><span> Мемы</span></div></div>
+        </article>
+        <p class="empty-state" id="empty-state" hidden>Никого не нашли. Может, он слишком хорошо скрывается?</p>
+      </div>
+      <p class="fineprint">Каталог участников статический. Описания — шуточные.</p>
+    </section>
+
+    <section class="section music-section" id="music">
+      <div class="section-heading">
+        <div><div class="eyebrow">Музыка Тимура</div><h2>Что тут происходит нахуй?<span>.</span></h2></div>
+        <span class="music-label">SERVER PLAYLIST</span>
+      </div>
+      <div class="player">
+        <div class="album-art" id="album-art" aria-hidden="true">♫</div>
+        <div class="player-main">
+          <div class="track-title" id="track-title">Выбери трек</div>
+          <div class="track-subtitle" id="track-subtitle">Общий плейлист сервера · 3 трека</div>
+          <div class="progress-row">
+            <span id="current-time">0:00</span>
+            <input id="progress" class="progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Позиция воспроизведения">
+            <span id="duration">0:00</span>
+          </div>
+          <div class="player-controls">
+            <button class="player-button secondary" id="prev-button" type="button" aria-label="Предыдущий трек">|◀</button>
+            <button class="player-button" id="play-button" type="button" aria-label="Воспроизвести">▶</button>
+            <button class="player-button secondary" id="next-button" type="button" aria-label="Следующий трек">▶|</button>
+            <label class="volume-control">Громкость <input id="volume" type="range" min="0" max="1" value="0.75" step="0.01" aria-label="Громкость"></label>
+          </div>
+          <ol class="playlist" id="playlist" aria-label="Список треков">
+            <li><button type="button" data-track="0">Подмышка break ver 01 Mr.tea chase music</button></li>
+            <li><button type="button" data-track="1">0тветка на дисс (shame chase music)</button></li>
+            <li><button type="button" data-track="2">UMаксим ver. 01</button></li>
+          </ol>
+        </div>
+        <audio id="audio" preload="metadata"></audio>
+      </div>
+      <p class="player-note">Это общий плейлист сайта: у всех посетителей один и тот же список треков. Каждый запускает музыку у себя кнопкой — браузеры не разрешают сайту включать звук автоматически.</p>
     </section>
 
     <section class="about-section" id="about">
       <div class="about-icon">💬</div>
-      <div><div class="eyebrow">ЧТО ЗДЕСЬ ПРОИСХОДИТ</div><h2>Свои среди своих.</h2><p>Общаемся, играем, кидаем мемы и периодически задаёмся вопросом: «Кто такая блять Копана Рики»</p></div>
+      <div><div class="eyebrow">ЧТО ЗДЕСЬ ПРОИСХОДИТ</div><h2>Свои среди своих.</h2><p>Общаемся, играем, кидаем мемы и периодически задаёмся вопросом: «Как мы вообще до этого дошли?»</p></div>
       <a class="button primary" href="https://discord.gg/sW3k2eWvD" target="_blank" rel="noopener">Залететь на сервер ↗</a>
     </section>
   </main>
 
-  <footer><span>© 2026 ПОЛОВЫЕ МОНСТРЫ</span><span>Кто прочитал тот гей.</span><a href="https://discord.gg/sW3k2eWvD" target="_blank" rel="noopener">Discord ↗</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <footer><span>© 2026 ПОЛОВЫЕ МОНСТРЫ</span><span>Сделано с хаосом и CSS.</span><a href="https://discord.gg/sW3k2eWvD" target="_blank" rel="noopener">Discord ↗</a></footer>
   <script src="script.js"></script>
 </body>
 </html>
